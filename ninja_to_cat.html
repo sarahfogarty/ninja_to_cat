@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ninja to Cat</title>
+	<!-- <meta name="description" content="This webpage contains an image that's split into five pieces. As each individual peace is clicked on, and new peace of image is revealed."> -->
+	<meta charset="utf-8">
+
+	<!-- Links and Scripts -->
+	<link rel="stylesheet" type="text/css" href="ninja_to_cat_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$('document').ready(function(){
+			$('img').click(function(){
+				var oldSrc= $(this).attr('src');
+				var newSrc= $(this).attr('altSrc');
+				$(this).attr('src', newSrc);
+				$(this).attr('altSrc', oldSrc);
+			}) // End of click function //
+		})
+	</script>
+</head>
+<body>
+	<div id="container">
+		<h1>Ninja to Cat</h1>
+		<p>Click on the images below to change to a different image.</p>
+		<!-- Start of image pieces -->
+		<img src="cat0.png" altSrc="ninja0.png" alt="image 1">
+		<img src="cat1.png" altSrc="ninja1.png" alt="image 2">
+		<img src="cat2.png" altSrc="ninja2.png" alt="image 3">
+		<img src="cat3.png" altSrc="ninja3.png" alt="image 4">
+		<img src="cat4.png" altSrc="ninja4.png" alt="image 5">
+	</div> <!-- End of container -->
+</body>
+</html>

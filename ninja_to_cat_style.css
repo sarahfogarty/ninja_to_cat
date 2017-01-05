@@ -1,0 +1,28 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	font-family: 'courier';
+}
+body {
+	background-color: white;
+	padding: 20px;
+}
+#container {
+	width: 960px; 
+	height: 530px; 
+	background-color: rgb(154, 164, 186);
+	margin: 0px auto;
+}
+img {
+	display: block;
+	margin: 7px auto;
+	width: 220px;
+}
+/*img:hover {
+	box-shadow: 0px 0px 30px white;
+}*/
+h1, p {
+	text-align: center;
+	padding: 10px; 
+	color: black;
+}
